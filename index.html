@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+         <div class="container">
+            <div class="title"><h1>Calculator</h1></div>
+            <div class="content">   
+                <div class="board"></div>
+                <div class="buttons">
+                    <button onclick="changeColour('black')">Black</button>
+                    <button onclick="changeColour('white')">Eraser</button>
+                </div>
+                <div>
+                    <input 
+                        type="number" 
+                    >
+                    <button>=</button>
+                </div>
+                <div class="error">
+                    Input must be between 1 and 100!
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
