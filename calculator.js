@@ -1,3 +1,6 @@
+let x = 0;
+let y = 0;
+let o = undefined;
 function add() {
 
 }
