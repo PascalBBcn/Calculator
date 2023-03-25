@@ -1,5 +1,5 @@
-// let x = 0;
-// let y = 0;
+// let num1 = undefined;
+// let num2 = undefined;
 // let operator = undefined;
 function add(x, y) {
     let output = x + y;
@@ -20,18 +20,23 @@ function divide(x, y) {
     let output = x / y;
     return output;
 }
-console.log(add(10, 5));
-console.log(subtract(10, 5));
-console.log(multiply(10, 5));
-console.log(divide(10, 5));
-// function operate(n1, o, n2) {
-//     if() {
+// console.log(add(10, 5));
+// console.log(subtract(10, 5));
+// console.log(multiply(10, 5));
+// console.log(divide(10, 5));
 
-//     }
-//     else if() {
-
-//     }
-//     else if() {
-
-//     }
-// }
+function operate(n1, o, n2) {
+    if(o == 1) {
+        return add(n1, n2);
+    }
+    else if(o == 2) {
+        return subtract(n1, n2);
+    }
+    else if(o == 3) {
+        return multiply(n1, n2);
+    }
+    else if(o == 4) {
+        return divide(n1, n2);
+    }
+}
+console.log(operate(1, 1, 2));
