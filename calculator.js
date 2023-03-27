@@ -20,10 +20,6 @@ function divide(x, y) {
     let output = x / y;
     return output;
 }
-// console.log(add(10, 5));
-// console.log(subtract(10, 5));
-// console.log(multiply(10, 5));
-// console.log(divide(10, 5));
 
 function operate(n1, o, n2) {
     if(o == 1) {
@@ -39,4 +35,4 @@ function operate(n1, o, n2) {
         return divide(n1, n2);
     }
 }
-console.log(operate(1, 1, 2));
+console.log(operate(1, 4, 2));

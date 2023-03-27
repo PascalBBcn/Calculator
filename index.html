@@ -8,23 +8,33 @@
     </head>
     <body>
          <div class="container">
-            <div class="title"><h1>Calculator</h1></div>
             <div class="content">   
-                <div class="board"></div>
-                <div class="buttons">
-                    <button onclick="">+</button>
-                    <button onclick="">-</button>
-                    <button onclick="">*</button>
-                    <button onclick="">/</button>
+                <div class="board">
+                    
                 </div>
-                <div>
+                <div class="numberButtons">
                     <input 
-                        type="number" 
-                    >
-                    <button>=</button>
+                        type="text" 
+                        placeholder="Number" 
+                        value="16" 
+                    >    
+                    <button onclick="">7</button>
+                    <button onclick="">8</button>
+                    <button onclick="">9</button>
+                    <button onclick="">4</button>
+                    <button onclick="">5</button>
+                    <button onclick="">6</button>
+                    <button onclick="">1</button>
+                    <button onclick="">2</button>
+                    <button onclick="">3</button>
+                    <button onclick="">0</button>
                 </div>
-                <div class="error">
-                    Input must be between 1 and 100!
+                <div class="operatorButtons">
+                    <button onclick="">&divide;</button>
+                    <button onclick="">*</button>
+                    <button onclick="">-</button>
+                    <button onclick="">+</button>
+                    <button class="equalsButton" onclick="">=</button>
                 </div>
             </div>
         </div>
