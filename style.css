@@ -38,6 +38,11 @@ button {
     transition: all 0.2s;
 }
 
+.equalsButton {
+    background-color: rgb(15, 15, 15);
+    color: rgb(200, 185, 0);
+}
+
 .numberButtons {
     margin-left: 0.3em;
     margin-bottom: 5px;
@@ -50,11 +55,15 @@ button {
     margin-bottom: 5px;
 }
 
-input {
-    margin-bottom: 50px;
+#display {
+    border-radius: 0.5em;
+    margin-bottom: 40px;
     margin-left: 0.3em;
-    height: 50px;
+    height: 60px;
     width: 220px;
+    background-color:  rgb(215, 215, 215);
+    font-size: x-large;
+    font-weight: 900;
 
 } 
 

@@ -13,28 +13,27 @@
                     
                 </div>
                 <div class="numberButtons">
-                    <input 
-                        type="text" 
-                        placeholder="Number" 
-                        value="16" 
-                    >    
-                    <button onclick="">7</button>
-                    <button onclick="">8</button>
-                    <button onclick="">9</button>
-                    <button onclick="">4</button>
-                    <button onclick="">5</button>
-                    <button onclick="">6</button>
-                    <button onclick="">1</button>
-                    <button onclick="">2</button>
-                    <button onclick="">3</button>
-                    <button onclick="">0</button>
+                    <div id="display">
+                        <div class="displayValue"></div> 
+                    </div>  
+                    <button onclick="populateDisplay('7')">7</button>
+                    <button onclick="populateDisplay('8')">8</button>
+                    <button onclick="populateDisplay('9')">9</button>
+                    <button onclick="populateDisplay('4')">4</button>
+                    <button onclick="populateDisplay('5')">5</button>
+                    <button onclick="populateDisplay('6')">6</button>
+                    <button onclick="populateDisplay('1')">1</button>
+                    <button onclick="populateDisplay('2')">2</button>
+                    <button onclick="populateDisplay('3')">3</button>
+                    <button onclick="populateDisplay('0')">0</button>
+                    <button onclick="populateDisplay(null)">AC</button>
                 </div>
                 <div class="operatorButtons">
-                    <button onclick="">&divide;</button>
-                    <button onclick="">*</button>
-                    <button onclick="">-</button>
-                    <button onclick="">+</button>
-                    <button class="equalsButton" onclick="">=</button>
+                    <button onclick="populateDisplay('&divide')">&divide;</button>
+                    <button onclick="populateDisplay('x')">x</button>
+                    <button onclick="populateDisplay('-')">-</button>
+                    <button onclick="populateDisplay('+')">+</button>
+                    <button class="equalsButton">=</button>
                 </div>
             </div>
         </div>
