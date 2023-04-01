@@ -1,23 +1,27 @@
 function add(x, y) {
     let output = x + y;
+    output = Math.round(output * 1000) /1000;
     display.innerHTML = output;
     return output;
 }
 
 function subtract(x, y) {
     let output = x - y;
+    output = Math.round(output * 1000) /1000;
     display.innerHTML = output;
     return output;
 }
 
 function multiply(x, y) {
     let output = x * y;
+    output = Math.round(output * 1000) /1000;
     display.innerHTML = output;
     return output;
 }
 
 function divide(x, y) {
     let output = x / y;
+    output = Math.round(output * 1000) /1000;
     display.innerHTML = output;
     return output;
 }
@@ -32,10 +36,7 @@ function operate(n1, o, n2) {
     else if(o == 'x') {
         return multiply(n1, n2);
     }
-    else if(o == '÷') {
-        if(n2 == 0) {
-            display.innerHTML = "Can't divide by 0";
-        }
+    else if(o == '÷') {    
         return divide(n1, n2);
     }
 }
