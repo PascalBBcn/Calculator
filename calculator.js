@@ -96,11 +96,11 @@ button.addEventListener('click', () => {
 
     for(let i = 0; i < joinedStringArray.length; i++)
     {
-       let stringToNum = parseInt(joinedStringArray[i]);
+       let stringToNum = parseFloat(joinedStringArray[i]);
        numArray.push(stringToNum);
     }
 
-    lastString = parseInt(lastString);
+    lastString = parseFloat(lastString);
     numArray.push(lastString);
     console.log(numArray);
 
