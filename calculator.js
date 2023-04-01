@@ -45,6 +45,7 @@ let operatorArray = [];
 let concatenator = undefined;
 let joinedStringArray = [];
 let numArray = [];
+let finalValue = undefined;
 
 
 const button = document.querySelector('.equalsButton');
@@ -106,8 +107,20 @@ button.addEventListener('click', () => {
         {
             num1 = operate(num1, operatorArray[i], numArray[i+1]);
         }
-        return num1;  
+        finalValue = num1;
+        // num1.toString();
+        // display.innerHTML = num1;
+        return num1;
     }
+    displayArray = [];
+    stringArray = [];
+    joinedStringArray = [];
+    lastString = [];
+    operatorArray = [];
+    numArray = [];
+    display.innerHTML = finalValue;
+    finalValue.toString();
+    displayArray.push(finalValue);
 });
 
 
