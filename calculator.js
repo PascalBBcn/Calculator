@@ -32,7 +32,10 @@ function operate(n1, o, n2) {
     else if(o == 'x') {
         return multiply(n1, n2);
     }
-    else if(o == '&divide') {
+    else if(o == '÷') {
+        if(n2 == 0) {
+            display.innerHTML = "Can't divide by 0";
+        }
         return divide(n1, n2);
     }
 }
@@ -53,7 +56,7 @@ button.addEventListener('click', () => {
 
     for(let i = 0; i < displayArray.length; i++)
     {
-        if(displayArray[i] == 'x' || displayArray[i] == '&divide' || 
+        if(displayArray[i] == 'x' || displayArray[i] == '÷' || 
            displayArray[i] == '+' || displayArray[i] == '-') 
         {  
             operatorArray.push(displayArray[i]);
@@ -74,7 +77,7 @@ button.addEventListener('click', () => {
 
     for(let i = displayArray.length - 1; i > 0; i--) 
     {
-        if(displayArray[i] == 'x' || displayArray[i] == '&divide' || 
+        if(displayArray[i] == 'x' || displayArray[i] == '÷' || 
            displayArray[i] == '+' || displayArray[i] == '-') 
         {
             break;
@@ -122,7 +125,6 @@ button.addEventListener('click', () => {
     finalValue.toString();
     displayArray.push(finalValue);
 });
-
 
 function populateDisplay(item) {
     display.innerHTML = item;
